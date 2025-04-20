@@ -73,23 +73,26 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-  <form
-  action="https://formspree.io/f/mgvagllr"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+   <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get Started</h2>
+      <p>Ready to take control of your child's IEP process? Reach out today!</p>
+            <form action="https://formspree.io/f/mgvagllr" method="POST">
+        <!-- Replace "yourFormId" with your Formspree form ID -->
 
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width:100%; padding:0.5rem;"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required style="width:100%; padding:0.5rem;"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" style="width:100%; padding:0.5rem;" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2025 Virtual IEP Coaching | All Rights Reserved</p>
   </footer>
